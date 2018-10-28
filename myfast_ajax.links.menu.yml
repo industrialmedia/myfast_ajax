@@ -1,0 +1,7 @@
+myfast_ajax.admin.list:
+  title: 'Fast ajax'
+  route_name: 'myfast_ajax.admin.list'
+  parent: 'system.admin_config'
+  description: 'Fast ajax content.'
+  weight: 100
+

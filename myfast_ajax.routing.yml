@@ -1,0 +1,8 @@
+myfast_ajax.admin.list:
+  path: '/admin/config/myfast-ajax'
+  defaults:
+    _controller: '\Drupal\myfast_ajax\Controller\MyfastAjaxController::listPage'
+    _title: 'Fast ajax'
+  requirements:
+    _permission: 'administer myfast_ajax'
+

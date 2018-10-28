@@ -1,0 +1,4 @@
+administer myfast_ajax:
+  title: 'Administer myfast_ajax'
+  restrict access: TRUE
+

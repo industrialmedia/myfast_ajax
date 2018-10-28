@@ -11,10 +11,20 @@ use Drupal\Component\Annotation\Plugin;
  */
 class MyfastAjax extends Plugin {
 
+
   /**
-   * ID плагина.
+   * The plugin ID.
+   *
+   * @var string
    */
   public $id;
+
+  /**
+   * Аргументы плагина.
+   *
+   * @var array
+   */
+  public $arg_names = [];
   
 
 }
