@@ -1,0 +1,6 @@
+services:
+  plugin.manager.myfast_ajax:
+    class: Drupal\myfast_ajax\MyfastAjaxPluginManager
+    parent: default_plugin_manager
+
+

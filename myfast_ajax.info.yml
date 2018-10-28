@@ -1,0 +1,7 @@
+name: myfast_ajax
+description: My fast ajax
+package: AAMID
+type: module
+core: 8.x
+version: 1.0
+
