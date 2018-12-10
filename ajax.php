@@ -5,6 +5,7 @@ use Drupal\Core\DrupalKernel;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Component\Serialization\Json;
 use Drupal\myfast_ajax\MyfastAjaxPluginInterface;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 $autoloader = require_once 'autoload.php';
 $request = Request::createFromGlobals();
@@ -28,11 +29,13 @@ if (!empty($_GET['id'])) {
     if ($myfast_ajax instanceof MyfastAjaxPluginInterface) {
       $result['content'] = $myfast_ajax->getContent();
     }
-
   }
 }
 $time_end = microtime(TRUE) - $time_start;
 $result['time_load'] = number_format($time_end, 3, '.', '');
-print Json::encode($result);
+
+$response = new JsonResponse($result);
+$response->send();
+$kernel->terminate($request, $response);
 
 

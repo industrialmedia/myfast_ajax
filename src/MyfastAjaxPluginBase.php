@@ -3,9 +3,9 @@ namespace Drupal\myfast_ajax;
 
 use Drupal\Component\Plugin\PluginBase;
 
-// abstract
+//
 
- class MyfastAjaxPluginBase extends PluginBase implements MyfastAjaxPluginInterface {
+abstract class MyfastAjaxPluginBase extends PluginBase implements MyfastAjaxPluginInterface {
 
 
 
